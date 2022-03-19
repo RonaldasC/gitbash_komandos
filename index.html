@@ -66,20 +66,40 @@
             Pagrindinės git komandos
         </h2>
         <li>echo "# test2">>README.md</li>
-        <li>git init</li>
+        <li>git init (init comanda naudojama kai norima pradėti naują repositoriją arba inicijuoti esamą)</li>
         <li>git add README.md</li>
-        <li>git add .</li>
-        <li>git commit -m "first commit"</li>
-        <li>git remote add origin git@github.com:yourUsername/test.git</li>
-        <li>git push -u origin master</li>
-        <li>git reset --hard</li>
-        <li>git chechout -b branchName</li>
-        <li>git pull origin master</li>
-        <li>git stash</li>
-        <li>git clone "repository url</li>
+        <li>git add . (naudojama pakeistiems failams sukurti)</li>
+        <li>git commit -m "first commit" (lokalus išsisaugojimas momentinė versija)</li>
+        <li>git remote add origin git@github.com:yourUsername/test.git (prideda naują repozitoriją)</li>
+        <li>git push -u origin master (nusiunčia lokalius pakeitimus į tinklą) </li>
+        <li>git reset --hard (atstato failus į pradinę buseną/versiją)</li>
+        <li>git chechout -b branchName (skirta pereitį iš vienos šakos į kitą šaką)</li>
+        <li>git pull origin master (dirbank keliese nu viena šaką paimtu visus pakeitimus susijusius)</li>
+        <li>git stash </li>
+        <li>git clone "repository url" (skirta parsisiusti naujausę versiją ir nukopijuoti į pasirinktą vietą)</li>
     </ul>
+        <h2>
+            Paruoštukas <!--Karolio Žemelio paruoštukas. Karoli jei norėsi būti pridėtas i h2 teks pačiam edit pasidaryt ir update versiją-->
+        </h2>
+    <ol>
+        <li>Nueiname į direktoriją kur kursime aplanką</li>
+        <li>su "mkdir" sukuriame aplanką (be tarpų ir simbolių!)</li>
+        <li>einame į naująjį aplanką</li>
+        <li>kuriame failus su "touch" (index, style)</li>
+        <li>sukuriame (inicijuojame) repozitoriją su "git init"</li>
+        <li>pridedame pavienius failus su "git add" arba visus su "git add ."</li>
+        <li>commitinam failus į repozitoriją su "git commit -m "komentaras kas atlikta""</li>
+        <li>sukuriame git hube repozitoriją</li>
+        <li>susiejame abi repozitorijas su: "git remote add origin"</li>
+        <li>išstumiam failus į git hub su "git push origin master"</li>
+        <li>atliekame pakeitimus, geriausia kad jie būtų grupuojami pvz spalvų pakeitimas css</li>
+        <li>pridedame pakeistus failus arba visus direktorijoje esančius failus "git add ."</li>
+        <li>commitiname su komentaru kas atlikta</li>
+        <li>išpušinam į github</li>
+      </ol>
+      <h2> Papildoma naudinga informacija</h2>
     <p>
-        kažkada įterpt reiks shift+arow key -juda iki artimiausio simbolio (žodžio raidės nėra simbolis šiuo atveju)
+        Paspaudus shift+arrow key (shift klavišas + strėlytė į kairę arba dešinę) - žymeklis juda iki artimiausio simbolio (žodžio raidės nėra simbolis šiuo atveju)
     </p>
 </body>
 </html>
