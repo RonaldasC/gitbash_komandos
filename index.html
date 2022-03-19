@@ -41,15 +41,45 @@
         <h2>
             Curl ir failų peržiūrėjimas <!--1val 30 min video medžiagos-->
         </h2>
-        <ul class="marker_change_ul">Curl reiškia C URL. Norėdami pamatyti tinklapį terminalo lange
-            <li>culr -L http://google.lt</li>
-            <li>culr -o http://google.lt -L "http://google.lt"</li>
+        <li>Curl reiškia C URL. Norėdami pamatyti tinklapį terminalo lange</li>
+        <ul class="marker_change_ul">            
+            <li class="marker_change_li">culr -L http://www.google.com (-L nukreipai į naują adresą jei puslapio adresas pasikeites ir puslapio savininkai nurodę tą pasikeitimą).</li>
+            <li class="marker_change_li">culr -o google.html -L "http://www.google.com" (-o nurodo koks faulo pavadinimas ir plėtinys bus šiuo atveju html bet taip pat galima ir txt išsisaugot nurodytą puslapį).</li>
             <ul>
                 Failų peržiūrėjimas (cat, less)
             <li class="marker_change_li">cat file.txt (leidžia peržiūrėti txt pletinio failą esamoje direktorijoje terminalo lange. Pvz.: cd Desktop/naujas01 cat file.txt (leistu būnant Home aplanke/direktorijoje nurodant kelę iki file.txt atidaryti jį terminalo lange). </li>
-            <li class="marker_change">less file.txt (leidžia peržiūrėti txt pletinio failą esamoje direktorijoje terminalo lange. PAPILDYTI KOMENTARU VĖLIAU KAI IŠSIAIŠKINSIU KAIP SUVALDYT ŠITĄ KOMANDĄ). </li>
+            <li class="marker_change_li">less file.txt (leidžia peržiūrėti txt pletinio failą esamoje direktorijoje terminalo lange. PAPILDYTI KOMENTARU VĖLIAU KAI IŠSIAIŠKINSIU KAIP SUVALDYT ŠITĄ KOMANDĄ). </li>
         </ul>
         </ul>
+        <h2>
+            Failų ir aplankų ištrynimo komandos
+        </h2>
+        <li>rm file.txt (ištrins faila pavadinimu file su galune txt iš esamos direktorijos)</li>
+        <li>rmdir foldername (ištrins direktor/aplanką neveiks jei direktorijoje bus kita direktorija ar failai)</li>
+        <li>rm -rf foldername (ištrins direktoriją ir turinį joje -rf neklaus ar tikrai norime ištrint (tas pats suveike tik su -r nenaudojant f)*)</li>
+        <h2>
+            Atverti darbinę direktoriją
+        </h2>
+        <li>open . (reiktų patikslinimo ką daro šita komanda)*</li>
+        <li>code . (atidarys Visual Studio Code su esamu aplanku). Pvz.: tarkim esam direktorijoje/aplanke Home tai įrašius komandą cd Desktop/naujas01/01/ ; code . VSC atidarys aplanką 01 esanty desktop aplanke naujas01.</li>
+        <h2>
+            Pagrindinės git komandos
+        </h2>
+        <li>echo "# test2">>README.md</li>
+        <li>git init</li>
+        <li>git add README.md</li>
+        <li>git add .</li>
+        <li>git commit -m "first commit"</li>
+        <li>git remote add origin git@github.com:yourUsername/test.git</li>
+        <li>git push -u origin master</li>
+        <li>git reset --hard</li>
+        <li>git chechout -b branchName</li>
+        <li>git pull origin master</li>
+        <li>git stash</li>
+        <li>git clone "repository url</li>
     </ul>
+    <p>
+        kažkada įterpt reiks shift+arow key -juda iki artimiausio simbolio (žodžio raidės nėra simbolis šiuo atveju)
+    </p>
 </body>
 </html>
