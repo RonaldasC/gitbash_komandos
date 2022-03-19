@@ -20,7 +20,7 @@
         <h2>
             Naršymo po katalogus komandos
         </h2>    
-        <li>cd foldername (įeiname į katalogą foldername (gali būti kitas pavadinimas arba visas keles iki reikemos vietos) esamoje direktorijoje jei tokiu pavadinimu turime jau katalogą)</li>
+        <li>cd foldername (įeiname į katalogą foldername (gali būti kitas pavadinimas arba visas keles iki reikemos vietos) esamoje direktorijoje jei tokiu pavadinimu turime jau katalogą). Taip pat skaitykite <a href="#cd_papildomaInfo">CD</a> Papildoma naudinga info.</li>
         <li>cd .. (einame vienu žingsniu aukštyn/atgal iš esamo katalogo)</li>
         <li>cd ../.. (du žingsniai atgal (cd ../../.. bus trys žingsniai))</li>
         <li>cd ~ (grįžta į home katalogą)</li>
@@ -48,7 +48,7 @@
             <ul>
                 Failų peržiūrėjimas (cat, less)
             <li class="marker_change_li">cat file.txt (leidžia peržiūrėti txt pletinio failą esamoje direktorijoje terminalo lange. Pvz.: cd Desktop/naujas01 cat file.txt (leistu būnant Home aplanke/direktorijoje nurodant kelę iki file.txt atidaryti jį terminalo lange). </li>
-            <li class="marker_change_li">less file.txt (leidžia peržiūrėti txt pletinio failą esamoje direktorijoje terminalo lange. PAPILDYTI KOMENTARU VĖLIAU KAI IŠSIAIŠKINSIU KAIP SUVALDYT ŠITĄ KOMANDĄ). </li>
+            <li class="marker_change_li">less file.txt (leidžia redaguoti failus consolėje). </li>
         </ul>
         </ul>
         <h2>
@@ -76,12 +76,16 @@
         <li>git chechout -b branchName (skirta pereitį iš vienos šakos į kitą šaką)</li>
         <li>git pull origin master (dirbank keliese nu viena šaką paimtu visus pakeitimus susijusius)</li>
         <li>git stash </li>
+        <li>git diff - parodo lokalius pakeitimus</li>
         <li>git clone "repository url" (skirta parsisiusti naujausę versiją ir nukopijuoti į pasirinktą vietą)</li>
     </ul>
         <h2>
             Paruoštukas <!--Karolio Žemelio paruoštukas. Karoli jei norėsi būti pridėtas i h2 teks pačiam edit pasidaryt ir update versiją-->
         </h2>
-    <ol>
+    <ul> <!--pamėgint pasdaryt numeracija nuo vieno iki 14 su atskirtu uk tarp 10-11 arba html ~100-101 eilutės-->
+        <li>1-10 žingsniai reikalingi tik pirmą kartą sukūrus projektą.</li>
+        </ul>
+        <ol>
         <li>Nueiname į direktoriją kur kursime aplanką</li>
         <li>su "mkdir" sukuriame aplanką (be tarpų ir simbolių!)</li>
         <li>einame į naująjį aplanką</li>
@@ -92,14 +96,23 @@
         <li>sukuriame git hube repozitoriją</li>
         <li>susiejame abi repozitorijas su: "git remote add origin"</li>
         <li>išstumiam failus į git hub su "git push origin master"</li>
+    </ol>
+        <ul>
+            <li>1-4 jau po to darant tolimesnius pakeitimus.</li> 
+        </ul>
+    <ol>
         <li>atliekame pakeitimus, geriausia kad jie būtų grupuojami pvz spalvų pakeitimas css</li>
         <li>pridedame pakeistus failus arba visus direktorijoje esančius failus "git add ."</li>
         <li>commitiname su komentaru kas atlikta</li>
         <li>išpušinam į github</li>
-      </ol>
+    </ol>
+      </ul>
       <h2> Papildoma naudinga informacija</h2>
-    <p>
-        Paspaudus shift+arrow key (shift klavišas + strėlytė į kairę arba dešinę) - žymeklis juda iki artimiausio simbolio (žodžio raidės nėra simbolis šiuo atveju)
-    </p>
+    <ul>
+        <li>Paspaudus shift+ins terminalo lange bus atliekama komanda įklyjuoti (paste)</li>
+        <li>Paspaudus shift+arrow key (shift klavišas + strėlytė į kairę arba dešinę) - žymeklis juda iki artimiausio simbolio (žodžio raidės nėra simbolis šiuo atveju)</li>
+        <li>Į terminalo langą įtempus failą arba aplanką parašoma pilna direktorija kur randas failas ar aplankas</li>
+        <li id="cd_papildomaInfo">Į terminalo langą įrašius komandą cd ir įtempus aplanką bus nueitą į aplanko direktoriją</li>
+    </ul>
 </body>
 </html>
